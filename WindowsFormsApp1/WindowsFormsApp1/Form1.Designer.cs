@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.aluNombre = new System.Windows.Forms.TextBox();
-            this.aluNota = new System.Windows.Forms.TextBox();
             this.listaAlumnos = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.aluNota = new System.Windows.Forms.NumericUpDown();
+            ((System.ComponentModel.ISupportInitialize)(this.aluNota)).BeginInit();
             this.SuspendLayout();
             // 
             // aluNombre
@@ -44,14 +45,6 @@
             this.aluNombre.Name = "aluNombre";
             this.aluNombre.Size = new System.Drawing.Size(278, 21);
             this.aluNombre.TabIndex = 0;
-            // 
-            // aluNota
-            // 
-            this.aluNota.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.aluNota.Location = new System.Drawing.Point(323, 72);
-            this.aluNota.Name = "aluNota";
-            this.aluNota.Size = new System.Drawing.Size(100, 21);
-            this.aluNota.TabIndex = 1;
             // 
             // listaAlumnos
             // 
@@ -108,21 +101,29 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // aluNota
+            // 
+            this.aluNota.Location = new System.Drawing.Point(323, 72);
+            this.aluNota.Name = "aluNota";
+            this.aluNota.Size = new System.Drawing.Size(105, 20);
+            this.aluNota.TabIndex = 7;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(597, 450);
+            this.Controls.Add(this.aluNota);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listaAlumnos);
-            this.Controls.Add(this.aluNota);
             this.Controls.Add(this.aluNombre);
             this.Name = "Form1";
             this.Text = "FJMA-2020  Tema 5";
+            ((System.ComponentModel.ISupportInitialize)(this.aluNota)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,12 +132,12 @@
         #endregion
 
         private System.Windows.Forms.TextBox aluNombre;
-        private System.Windows.Forms.TextBox aluNota;
         private System.Windows.Forms.TextBox listaAlumnos;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.NumericUpDown aluNota;
     }
 }
 
