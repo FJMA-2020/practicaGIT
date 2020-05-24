@@ -43,12 +43,21 @@ namespace WindowsFormsApp1
         private int nota;
         public string Nombre
         {
-            get { return nombre; }
-            set { nombre = value; }
+            get 
+            { 
+                return nombre; 
+            }
+            set 
+            { 
+                nombre = value; 
+            }
         }
         public int Nota
         {
-            get { return nota; }
+            get 
+            { 
+                return nota; 
+            }
             set
             {
                 if (value >= 0 && value <= 10)
