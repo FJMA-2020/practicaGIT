@@ -95,7 +95,7 @@
             this.button1.ForeColor = System.Drawing.Color.Maroon;
             this.button1.Location = new System.Drawing.Point(434, 65);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 36);
+            this.button1.Size = new System.Drawing.Size(103, 36);
             this.button1.TabIndex = 6;
             this.button1.Text = "Grabar alumno";
             this.button1.UseVisualStyleBackColor = true;
